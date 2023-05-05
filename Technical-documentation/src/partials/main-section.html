@@ -1,0 +1,501 @@
+<main class="main">
+  <div class="container">
+    <section class="main-section" id="Introduction">
+      <div class="introduction">
+        <h2 class="main-section__title">Введение в JavaScript</h2>
+        <button class="btn-reset btn">Вызвать функцию getDayInfo</button>
+      </div>
+      <article class="main-section__article">
+        <p>
+          JavaScript — это кросс-платформенный, объектно-ориентированный
+          скриптовый язык, являющийся небольшим и легковесным. Внутри среды
+          исполнения JavaScript может быть связан с объектами данной среды и
+          предоставлять программный контроль над ними.
+        </p>
+        <p>
+          JavaScript включает стандартную библиотеку объектов, например, Array,
+          Date и Math, а также базовый набор языковых элементов, например,
+          операторы и управляющие конструкции. Ядро JavaScript может быть
+          расширено для различных целей путём добавления в него новых объектов,
+          например:
+        </p>
+        <ul class="main-section__list">
+          <li>
+            JavaScript на стороне клиента расширяет ядро языка, предоставляя
+            объекты для контроля браузера и его Document Object Model (DOM).
+            Например, клиентские расширения позволяют приложению размещать
+            элементы в форме HTML и обрабатывать пользовательские события, такие
+            как щелчок мыши, ввод данных в форму и навигация по страницам.
+          </li>
+          <li>
+            JavaScript на стороне сервера расширяет ядро языка, предоставляя
+            объекты для запуска JavaScript на сервере. Например, расширение на
+            стороне сервера позволяет приложению соединяться с базой данных,
+            обеспечивать непрерывность информации между вызовами приложения или
+            выполнять манипуляции над файлами на сервере.
+          </li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="What_you_should_already_know">
+      <h2 class="main-section__title">Что вам уже следует знать?</h2>
+      <article class="main-section__article">
+        <p>В данном руководстве предполагается, что вы имеете:</p>
+        <ul class="main-section__list">
+          <li>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide" class="main-section__link"
+              target="_blank">
+              Изучение Web
+            </a>
+            предоставляет информацию для начинающих и вводит в базовые концепции
+            программирования и Internet.
+          </li>
+          <li>
+            <a href="https://developer.mozilla.org/ru/docs/Learn" class="main-section__link" target="_blank">
+              Руководство по JavaScript
+            </a>
+            (данное руководство) предоставляет обзор JavaScript и его объектов.
+          </li>
+          <li>
+            <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference" class="main-section__link"
+              target="_blank">
+              Справочник по JavaScript
+            </a>
+            предоставляет подробную информацию по JavaScript.
+          </li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="JavaScript_and_Java">
+      <h2 class="main-section__title">JavaScript and Java</h2>
+      <article class="main-section__article">
+        <p>
+          JavaScript и Java похожи в одних отношениях, но фундаментально отличны
+          в других. Javascript напоминает Java, но не имеет статической
+          типизации и строгой проверки типов, которыми обладает Java. JavaScript
+          следует большей части синтаксиса Java в выражениях, соглашениях об
+          именовании и основного потока управления конструкциями, поэтому он был
+          переименован из LiveScript в JavaScript.
+        </p>
+        <p>
+          В отличие от системы скомпилированных классов Java, построенной на
+          объявлениях, JavaScript поддерживает систему исполнения, основанную на
+          небольшом числе типов данных, представляющих числовые, логические и
+          строковые значения. JavaScript имеет объектную модель на базе
+          прототипов вместо более общей модели на базе классов. Модель объектов
+          на базе прототипов предоставляет динамическое наследование, т.е. то,
+          что наследуется, может отличаться для отдельных объектов. JavaScript
+          также поддерживает функции без каких-либо специальных декларативных
+          требований. Функции могут быть свойствами объектов, выполняться как
+          свободно-типизированные методы.
+        </p>
+        <p>
+          По сравнению с Java, JavaScript является языком с очень свободной
+          формой. Вам не надо объявлять переменные, классы и методы. Вам не надо
+          беспокоиться о том, являются ли методы публичными (public), приватными
+          (private) или защищёнными (protected), а также вам не надо
+          реализовывать интерфейсы. Переменные, параметры и возвращаемые
+          функциями типы не являются явно типизированными.
+        </p>
+        <p>
+          Java — это язык программирования, основанный на классах и
+          предназначенный для быстрого выполнения и безопасности типов.
+          Безопасность типов означает, например, что вы не можете привести тип
+          integer к типу object reference или получить доступ к приватной
+          памяти, изменяя байт-код Java. Ориентированная на классы модель Java
+          означает, что программы состоят исключительно из классов и их методов.
+          Наследование классов и строгая типизация в Java обычно требуют тесно
+          связанные иерархии объектов. Эти требования делают программирование на
+          Java более комплексным, чем программирование на JavaScript.
+        </p>
+        <p>
+          По духу JavaScript происходит от небольших, динамически типизированных
+          языков, таких как HyperTalk и dBASE. Эти скриптовые языки предлагают
+          инструменты программирования для гораздо более широкой аудитории
+          благодаря более простому синтаксису, специализированной встроенной
+          функциональности и минимальным требованиям для создания объектов.
+        </p>
+      </article>
+    </section>
+    <section class="main-section hero" id="Hello_world">
+      <h2 class="main-section__title">Hello world</h2>
+      <article class="main-section__article">
+        <p>
+          Чтобы начать писать JavaScript-код откройте Scratchpad и напишите свой
+          первый "Hello World!" код:
+          <code class="main-section__code">
+            function greetMe(yourName) { alert("Hello " + yourName); }
+            greetMe("World");
+          </code>
+        </p>
+        <p>
+          Выберите код на панели и зажмите Ctrl + R, чтобы открыть код в
+          браузере!
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Variables">
+      <h2 class="main-section__title">Переменные</h2>
+      <article class="main-section__article">
+        <p>
+          Вы можете использовать переменные как символические имена для значений
+          в вашем приложении. Имена переменных называются
+          <a href="https://developer.mozilla.org/ru/docs/Glossary/Identifier" class="main-section__link"
+            target="_blank">
+            identifiers
+          </a>
+          и должны соответствовать определённым правилам.
+        </p>
+        <p>
+          Идентификатор в JavaScript должен начинаться с буквы, нижнего
+          подчёркивания (_) или знака доллара ($); последующие символы могут
+          также быть цифрами (0-9). Поскольку JavaScript чувствителен к
+          регистру, буквы включают символы от "A" до "Z" (верхний регистр) и
+          символы от "a" до "z" (нижний регистр).
+        </p>
+        <p>
+          Вы можете использовать в идентификаторах буквы ISO 8859-1 или Unicode,
+          например, å или ü. Вы также можете использовать
+          <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Lexical_grammar#String_literals"
+            class="main-section__link" target="_blank">управляющие последовательности Unicode</a>
+          как символы в идентификаторах. Некоторые примеры корректных имён:
+          Number_hits, temp99, and _name.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Declaring_variables">
+      <header class="main-section__header">Объявление переменных</header>
+      <article class="main-section__article">
+        Вы можете объявить переменную тремя способами:
+        <p>
+          Используя ключевое слово var. Например,
+          <code class="main-section__code"> var x = 42. </code>
+          Данный синтаксис может быть использован для объявления как локальных,
+          так и глобальных переменных.
+        </p>
+        <p>
+          Просто присвоить переменной значение. Например,
+          <code class="main-section__code"> x = 42. </code>
+          Переменные, объявленные данным способом, являются глобальными. Такое
+          объявление генерирует
+          <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Strict_mode"
+            class="main-section__link" target="_blank">
+            строгое предупреждение (strict mode)</a>.&nbsp; Не рекомендуется использовать данный способ.
+        </p>
+        <p>
+          Используя ключевое слово
+          <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/let"
+            class="main-section__link" target="_blank">let</a>.&nbsp;Например,
+          <code class="main-section__code"> let y = 13. </code>
+          Данный синтаксис может быть использован для объявления локальной
+          переменной в области видимости блока.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Variable_scope">
+      <h2 class="main-section__title">Область видимости переменных</h2>
+      <article class="main-section__article">
+        <p>
+          Когда вы объявляете переменную вне функции, то такая переменная
+          называется <i>глобальной </i> переменной, т.к. доступна любому коду в
+          текущем документе. Когда вы объявляете переменную внутри функции, то
+          такая переменная называется локальной переменной, т.к. доступна только
+          внутри данной функции.
+        </p>
+        <p>
+          До ECMAScript 6 в JavaScript отсутствовала область видимости
+          <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Control_flow_and_error_handling"
+            class="main-section__link" target="_blank">блока </a>;&nbsp; переменная, объявленная внутри блока, является
+          локальной для
+          <strong><i>функции</i></strong> (или <i>глобальной</i> области
+          видимости), внутри которой находится данный блок. Например, следующий
+          код выведет значение 5, т.к. областью видимости переменной x является
+          функция (или глобальный контекст), внутри которой объявлена переменная
+          x, а <strong><i>не блок</i></strong>, которым в данном случае является оператор if:
+        </p>
+        <code class="main-section__code">
+          if (true) { var x = 5; } console.log(x); // 5
+        </code>
+        <p>
+          Такое поведение меняется, если используется оператор let, введённый в
+          ECMAScript 6:
+        </p>
+        <code class="main-section__code">
+          if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
+          defined
+        </code>
+      </article>
+    </section>
+    <section class="main-section" id="Global_variables">
+      <header class="main-section__header">Глобальные переменные</header>
+      <article class="main-section__article">
+        <p>
+          Глобальные переменные на самом деле являются свойствами
+          <i>глобального объекта</i>. На веб-страницах глобальным объектом
+          является
+          <a class="main-section__link" href="https://developer.mozilla.org/ru/docs/Web/API/Window"
+            target="_blank">window</a>,&nbsp; поэтому вы можете устанавливать глобальные переменные и
+          обращаться к ним, используя синтаксис window.variable:
+          <code class="main-section__code">window.foo = 'bar';</code>
+        </p>
+        <p>
+          Следовательно, вы можете обращаться к глобальным переменным,
+          объявленным в одном объекте window или frame из другого объекта window
+          или frame, указав имя window или frame. Например, если переменная
+          phoneNumber объявлена в документе, то вы можете сослаться на эту
+          переменную из iframe как parent.phoneNumber.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Constants">
+      <h2 class="main-section__title">Константы</h2>
+      <article class="main-section__article">
+        <p>
+          Вы можете создать именованную константу, доступную только для чтения,
+          используя ключевое слово
+          <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/const"
+            class="main-section__linkk">const</a>.&nbsp; Синтаксис идентификатора константы является таким же, как и у
+          идентификатора переменной: он должен начинаться с буквы, нижнего
+          подчёркивания или знака $ и может содержать буквы, цифры или нижнее
+          подчёркивание.
+        </p>
+        <code class="main-section__code"> const PI = 3.14; </code>
+        <p>
+          Нельзя изменить значение константы через присваивание или повторное
+          объявление во время выполнения скрипта. Значение должно быть указано
+          при инициализации.
+        </p>
+        <p>
+          Правила, касающиеся области видимости, для констант являются такими
+          же, как и для переменных, объявленных через let. Если ключевое слово
+          const не указано, то идентификатор будет являться переменной.
+        </p>
+        <p>
+          Нельзя объявить константу с таким же именем, как у функции или
+          переменной в одной области видимости. Следующие примеры выбросят
+          исключение TypeError
+        </p>
+        <code class="main-section__code">
+          // TЭто вызовет ошибку function f() {}; const f = 5; // // Это тоже
+          вызовет ошибку function f() { const g = 5; var g; // какие-то
+          выражения }
+        </code>
+        Однако, атрибуты объектов не защищены, так что следующее выражение
+        выполнится без проблем
+        <code class="main-section__code">
+          const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";
+        </code>
+      </article>
+    </section>
+    <section class="main-section" id="Data_types">
+      <h2 class="main-section__title">Типы данны</h2>
+      <article class="main-section__article">
+        <p>Последний стандарт ECMAScript определяет семь типов данных:</p>
+        <ul>
+          <li>
+            <p>
+              Шесть типов данных, которые являются
+              <a href="https://developer.mozilla.org/ru/docs/Glossary/Primitive" target="_blank"
+                class="main-section__link">примитивами</a>:&nbsp;
+            </p>
+            <ul>
+              <li>
+                <a href="https://developer.mozilla.org/ru/docs/Glossary/Boolean" target="_blank"
+                  class="main-section__link">Boolean</a>.&nbsp; true и false.
+              </li>
+              <li>
+                <a href="https://developer.mozilla.org/ru/docs/Glossary/Null" target="_blank"
+                  class="main-section__link">null</a>.&nbsp; Специальное ключевое слово, обозначающее нулевое или
+                «пустое» значение. Поскольку JavaScript чувствителен к регистру,
+                null не то же самое, что Null, NULL или любой другой вариант.
+              </li>
+              <li>
+                <a href="https://developer.mozilla.org/ru/docs/Glossary/undefined" target="_blank"
+                  class="main-section__link">undefined</a>.&nbsp; Свойство глобального объекта; переменная, не имеющая
+                присвоенного значения, обладает типом undefined.
+              </li>
+              <li>
+                <a href="https://developer.mozilla.org/ru/docs/Glossary/Number" target="_blank"
+                  class="main-section__link">Number</a>.&nbsp; 42 или 3.14159.
+              </li>
+              <li>
+                <a href="https://developer.mozilla.org/ru/docs/Glossary/String" target="_blank"
+                  class="main-section__link">String</a>.&nbsp; "Howdy"
+              </li>
+              <li>
+                <a href="https://developer.mozilla.org/ru/docs/Glossary/Symbol" target="_blank"
+                  class="main-section__link">Symbol</a>&nbsp; (new in ECMAScript 2015). A data type whose instances
+                are unique and immutable.
+              </li>
+            </ul>
+          </li>
+          <li>
+            и
+            <a href="https://developer.mozilla.org/ru/docs/Glossary/Object" target="_blank"
+              class="main-section__link">Object</a>&nbsp;
+          </li>
+        </ul>
+        Хотя типов данных относительно немного, но они позволяют вам выполнять
+        полезные функции в ваших приложениях.
+        <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank"
+          class="main-section__link">Objects</a>&nbsp; и
+        <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank"
+          class="main-section__link">функции</a>&nbsp; являются другими фундаментальными элементами языка. Вы можете
+        думать об объектах как об именованных контейнерах для значений и о
+        функциях как о процедурах, которые ваше приложение может исполнять.
+      </article>
+    </section>
+    <section class="main-section" id="if...else_statement">
+      <h2 class="main-section__title">Инструкция if...else</h2>
+      <article class="main-section__article">
+        <p>
+          Используйте оператор if для выполнения инструкции, если логическое
+          условия истинно. Используйте опциональный else, для выполнения
+          инструкции, если условие ложно. Оператор if выглядит так:
+          <code class="main-section__code">
+            if (condition) { statement_1; } else { statement_2; }
+          </code>
+        </p>
+        <p>
+          Здесь condition может быть любым выражением, вычисляемым как истинное
+          (true) или ложное (false). Чтобы получить более подробную информацию о
+          значениях true и false, прочитайте
+          <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Boolean#description"
+            target="_blank" class="main-section__link">Boolean</a>.&nbsp;. Если условие оценивается как true, то
+          выполняется
+          statement_1, в противном случае - statement_2. Блоки statement_1 и
+          statement_2 могут быть любыми блоками, включая также вложенные
+          инструкции if.
+        </p>
+        <p>
+          Также вы можете объединить несколько инструкций, пользуясь else if для
+          получения последовательности проверок условий:
+          <code class="main-section__code">
+            if (condition_1) { statement_1;} else if (condition_2) {
+            statement_2;} else if (condition_n) { statement_n; } else {
+            statement_last;}
+          </code>
+        </p>
+        <p>
+          В случае нескольких условий только первое логическое условие, которое
+          вычислится истинным (true), будет выполнено. Используйте блок ( { ...
+          } ) для группировки нескольких инструкций. Применение блоков является
+          хорошей практикой, особенно когда используются вложенные инструкции
+          if:
+          <code class="main-section__code">
+            if (condition) { statement_1_runs_if_condition_is_true;
+            statement_2_runs_if_condition_is_true; } else {
+            statement_3_runs_if_condition_is_false;
+            statement_4_runs_if_condition_is_false; }
+          </code>
+        </p>
+        <p>
+          Нежелательно использовать простые присваивания в условном выражении,
+          т.к. присваивание может быть спутано с равенством при быстром
+          просмотре кода. Например, не используйте следующий код:
+          <code class="main-section__code"> if (x = y) { /* ... */ } </code>
+        </p>
+        <p>
+          Если вам нужно использовать присваивание в условном выражении, то
+          распространённой практикой является заключение операции присваивания в
+          дополнительные скобки. Например:
+          <code class="main-section__code">
+            if ((x = y)) { /* statements here */ }
+          </code>
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="while_statement">
+      <h2 class="main-section__title">Цикл while</h2>
+      <article class="main-section__article">
+        <p>
+          Цикл
+          <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/while" target="_blank"
+            class="main-section__link">while</a>
+          выполняет выражения пока условие истинно. Выглядит он так:
+          <code class="main-section__code"> while (условие) выражения </code>
+        </p>
+        <p>
+          Если условие становится ложным, выражения в цикле перестают
+          выполняться и управление переходит к выражению после цикла.
+        </p>
+        <p>
+          Условие проверяется на истинность до того, как выполняются выражения в
+          цикле. Если условие истинно, выполняются выражения, а затем условие
+          проверяется снова. Если условие ложно, выполнение приостанавливается и
+          управление переходит к выражению после while.
+        </p>
+        <p>
+          Чтобы использовать несколько выражений, используйте блок выражение {
+          ... }, чтобы сгруппировать их.
+        </p>
+        Пример 1
+        <p>Следующий цикл while работает, пока n меньше трёх:</p>
+        <code class="main-section__code">
+          var n = 0; var x = 0; while (n < 3) { n++; x +=n; } </code> <p>
+            С каждой итерацией, цикл увеличивает n и добавляет это значение к x.
+            Поэтому, x и n получают следующие значения:
+            </p>
+            <ul>
+              <li>После первого прохода: n = 1 и x = 1</li>
+              <li>После второго: n = 2 and x = 3</li>
+              <li>После третьего прохода: n = 3 and x = 6</li>
+            </ul>
+            <p>
+              После третьего прохода, условие n < 3 становится ложным, поэтому цикл прерывается. </p> </article>
+                </section> <section class="main-section" id="Function_declarations">
+                <h2 class="main-section__title">
+                  Функции вида "function declaration statement"
+                </h2>
+                <article class="main-section__article">
+                  Объявление функции (function definition, или function declaration, или
+                  function statement) состоит из ключевого слова
+                  <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/function"
+                    target="_blank" class="main-section__link">function</a>
+                  и следующих частей:
+                  <ol>
+                    <li>Имя функции.</li>
+                    <li>
+                      Список параметров (принимаемых функцией) заключённых в круглые
+                      скобки () и разделённых запятыми.
+                    </li>
+                    <li>
+                      Инструкции, которые будут выполнены после вызова функции, заключают
+                      в фигурные скобки { }.
+                    </li>
+                  </ol>
+                  <p>
+                    Например, следующий код объявляет простую функцию с именем square:
+                  </p>
+                  <code class="main-section__code">
+                    function square(number) { return number * number; }
+                  </code>
+                  <p>
+                    Функция square принимает один параметр, названный number. Состоит из
+                    одной инструкции, которая означает вернуть параметр этой функции (это
+                    number) умноженный на самого себя. Инструкция return указывает на
+                    значение, которые будет возвращено функцией.
+                  </p>
+                  <code class="main-section__code"> return number * number; </code>
+                  <p>
+                    Примитивные параметры (например, число) передаются функции значением;
+                    значение передаётся в функцию, но если функция меняет значение
+                    параметра, это изменение не отразится глобально или после вызова
+                    функции.
+                  </p>
+                </article>
+    </section>
+    <section class="main-section" id="Reference">
+      <h2 class="main-section__title">Ссылки</h2>
+      <article class="main-section__article">
+        <ul>
+          <li>
+            Вся документация на этой странице взята из:
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank"
+              class="main-section__link">MDN</a>
+          </li>
+        </ul>
+      </article>
+    </section>
+  </div>
+</main>

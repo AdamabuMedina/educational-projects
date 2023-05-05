@@ -1,0 +1,37 @@
+.swiper-container {
+  width: 1770px;
+  min-height: 620px;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  margin: 0 10px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #FF9900;
+  background-color: transparent;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.swiper-button-disabled {
+  color: #666666;
+}
+
+.swiper-button-prev:after .swiper-button-next:after {
+  display: none;
+}

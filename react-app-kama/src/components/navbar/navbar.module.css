@@ -1,0 +1,35 @@
+.nav {
+  width: 135px;
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  max-height: 300px;
+  box-shadow: 1px 1px 10px 4px rgba(255, 255, 255, 0.75);
+}
+
+.list {
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+}
+
+.item {
+  margin-top: 5px;
+}
+
+.item:first-child {
+  margin-top: 0;
+}
+
+.item:last-child {
+  margin-top: 30px;
+}
+
+.link {
+  color: #000;
+  transition: color 0.3s ease-in-out;
+}
+
+.active {
+  color: #aaa;
+}

@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 26px;
+  padding-top: 46px;
+}
+
+.nav {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  &__item {
+    margin-right: 52px;
+  }
+
+  &__link {
+    color: $dark;
+  }
+}
+
+.cart {
+  background-image: url('../img/cart.svg');
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding-left: 45px;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  &__count {
+    background-image: url('../img/cart-bg.svg');
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 24px;
+    display: block;
+  }
+}

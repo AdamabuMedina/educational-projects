@@ -1,0 +1,10 @@
+.header {
+  background-color: #fff;
+}
+
+.header .logo {
+  width: 60px;
+  height: 60px;
+  padding: 10px 0;
+  pointer-events: none;
+}

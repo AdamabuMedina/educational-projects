@@ -1,0 +1,27 @@
+.app-wrapper {
+  background-color: #dbdde1;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.app-wrapper-content {
+  width: 85%;
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px 4px rgba(255, 255, 255, 0.75);
+}

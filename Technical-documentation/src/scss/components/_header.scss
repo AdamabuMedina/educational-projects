@@ -1,0 +1,17 @@
+.header {
+
+  &__title {
+    margin: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--black-color);
+
+    @include small-tablet {
+      color: var(--light-color);
+    }
+  }
+
+}

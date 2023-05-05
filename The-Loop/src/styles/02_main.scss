@@ -1,0 +1,41 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    flex: 0 0 50%;
+  }
+
+  .sale {
+    &__description {
+      font-size: 30px;
+      letter-spacing: -0.6;
+    }
+
+    &__title {
+      font-size: 56px;
+      font-weight: 700;
+      margin-top: 30px;
+      margin-bottom: 60px;
+    }
+  }
+  .box {
+    position: relative;
+    &__price {
+      position: absolute;
+      right: 0;
+      top: 35px;
+      text-align: right;
+      &--old {
+        font-weight: 700;
+        font-size: 24px;
+      }
+      &--new {
+        font-weight: 700;
+        font-size: 24px;
+        color: $important;
+        margin-top: 15px;
+      }
+    }
+  }
+}

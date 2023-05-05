@@ -1,0 +1,35 @@
+.title {
+  font-size: 24px;
+  color: #000;
+  font-weight: 700;
+}
+
+.friendAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #aaa;
+  margin-right: 10px;
+}
+
+.friendsList {
+  list-style: none;
+}
+
+.friendItem {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.friendsLink {
+  font-size: 24px;
+  color: #000;
+  transition: color 0.3s ease-in-out;
+}
+
+.friendsLink:hover {
+  color: #aaa;
+}

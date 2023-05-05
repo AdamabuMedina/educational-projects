@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Loop</title>
+  </head>
+  <body>
+    <!--Header-->
+    <%= require('html-loader!./parts/01_header.html').default %>
+    <!--Main-->
+    <%= require('html-loader!./parts/02_main.html').default %>
+    <!--Notice-->
+    <%= require('html-loader!./parts/03_notice.html').default %>
+    <!--Collection-->
+    <%= require('html-loader!./parts/04_collection.html').default %>
+    <!--Product-->
+    <%= require('html-loader!./parts/05_product.html').default %>
+    <!--Footer-->
+    <%= require('html-loader!./parts/06_footer.html').default %>
+  </body>
+</html>
